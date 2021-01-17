@@ -31,7 +31,7 @@ author: U.Oregon
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: A Century of Women in Craft - Sheet1 
+metadata: centurywomencraft 
 
 ##########
 # GOOGLE SERVICES [optional!]
