@@ -2,4 +2,6 @@ field,display_name
 title,Title
 date,Date
 description,Description
+catalog_number,Catalog Number
+credit_line,Credit Line
 subject,Subjects
