@@ -3,6 +3,8 @@ title,Title,
 creator,Creator,
 date,Date Created,
 description,Description,
+credit_line,Credit Line,
+catalog_number,Catalog Number,
 subject,Subjects,true
 location,Location
 latitude,Latitude
