@@ -69,3 +69,32 @@ CollectionBuilder documentation and general web content is licensed [Creative Co
 This license does *NOT* include any objects or images used in digital collections, which may have individually applied licenses described by a "rights" field.
 CollectionBuilder code is licensed [MIT](https://github.com/CollectionBuilder/collectionbuilder-gh/blob/master/LICENSE). 
 This license does not include external dependencies included in the `assets/lib` directory, which are covered by their individual licenses.
+
+## Scan images to searchable PDF (deskew + OCR)
+
+This repository now includes a helper script at `scripts/scan_to_pdf.py` that:
+
+1. accepts image files, folders, or glob patterns,
+2. deskews each page,
+3. runs OCR with Tesseract, and
+4. combines pages into a searchable PDF.
+
+### Requirements
+
+- Tesseract OCR installed and available on `PATH`
+- Python packages: `opencv-python`, `numpy`, `pytesseract`, `pypdf`
+
+Example install:
+
+```bash
+pip install opencv-python numpy pytesseract pypdf
+```
+
+### Usage
+
+```bash
+python scripts/scan_to_pdf.py scans/*.jpg -o output/book.pdf --lang eng --text-dir output/text
+```
+
+- `--lang` supports Tesseract language combos (for example `eng+deu`).
+- `--text-dir` is optional and writes one `.txt` file per page.
